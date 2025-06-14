@@ -29,10 +29,7 @@ $$
  2V_1 \sum_{1,3,5}{\cos(\mathbf{g}_i^{(1)}·\mathbf{r}+l ϕ_1)}
 +2V_2 \sum_{1,3,5}{\cos(\mathbf{g}_i^{(2)}·\mathbf{r})};
 \; l=\pm 1$ for top/bottom layer 
-$Δ_T=
-  w_1 \sum_{1,2,3}{e^{-{\rm i} \mathbf{q}_i^{(1)}·\mathbf{r} }} + 
-  w_2 \sum_{1,2,3}{e^{-{\rm i} \mathbf{q}_i^{(2)}·\mathbf{r}}}
-  $ </font>
+$Δ_T=w_1 \sum_{1,2,3}{e^{-{\rm i} \mathbf{q}_i^{(1)}·\mathbf{r} }} + w_2 \sum_{1,2,3}{e^{-{\rm i} \mathbf{q}_i^{(2)}·\mathbf{r}}}$ </font>
 <font size=1>$\mathbf{g_0^{(1)}}=
 \frac{4\pi}{\sqrt{3}\,a_M} \hat{x}
 \xrightarrow{C_6}                   \;
