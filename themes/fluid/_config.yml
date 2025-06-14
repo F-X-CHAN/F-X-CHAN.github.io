@@ -530,7 +530,7 @@ index:
   # 自动截取文章摘要
   # Auto extract post
   auto_excerpt:
-    enable: true
+    enable: false
 
   # 打开文章的标签方式
   # The browser tag to open the post
@@ -674,7 +674,7 @@ post:
     # CreativeCommons license
     # See: https://creativecommons.org/share-your-work/cclicenses/
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND | ZERO
-    license: 'BY'
+    license: 'BY-SA'
 
     # 显示作者
     author:
