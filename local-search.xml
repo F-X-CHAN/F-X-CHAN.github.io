@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>什么是车？</title>
+    <link href="/2024/11/29/%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%A6/"/>
+    <url>/2024/11/29/%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%A6/</url>
+    
+    <content type="html"><![CDATA[<p>那么，什么是“车”呢？</p><span id="more"></span><p>四个轮子、会动的是车；两个轮子、会动的也是车。</p><p>但是，有扇叶、能够<strong>旋转</strong>的风车也是车；带动纺锤<strong>旋转</strong>的也是车；用<strong>旋转</strong>刀片加工金属的称为车床。</p><p>我们可以博爱一点，带有<strong>旋转</strong>部件的，都可以称为“车”。</p><p>手上用于计时的就是“手车”；脚下的就是“地车” (它甚至还能将人从一个地方运输到另一处，这绝对是车)。</p><p>即使严格一点，限定转轴平行，“天王车”欢迎您。</p><p>只要我躺下开始打滚，宇宙就成了巨大的车 :P</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>random thoughts</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>芝诺的元素灵</title>
+    <link href="/2024/11/12/%E8%8A%9D%E8%AF%BA%E7%9A%84%E5%85%83%E7%B4%A0%E7%81%B5/"/>
+    <url>/2024/11/12/%E8%8A%9D%E8%AF%BA%E7%9A%84%E5%85%83%E7%B4%A0%E7%81%B5/</url>
+    
+    <content type="html"><![CDATA[<p>那么，魔法的本源是什么？</p><span id="more"></span><p>魔法师向元素精灵祈求以施展魔法<br>而精灵的力量从何而来？<br>精灵向精灵的精灵祈求，只不过咏唱速度加倍，几乎难以听清<br>精灵的精灵又继续祈祷，只是咏唱又倍速<br>……<br>于是，施法在有限的时间里完成了</p><p>那么魔法的本源究竟是什么？</p><hr><blockquote><p>来自 F.Ye：《GEB》里有个类似的故事</p></blockquote><blockquote><p>特德姜的作品十分不错</p></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>random thoughts</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>README</title>
+    <link href="/2024/11/02/README/"/>
+    <url>/2024/11/02/README/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome, welcome.</p><span id="more"></span><h1 id="Academic-part"><a href="#Academic-part" class="headerlink" title="Academic part"></a>Academic part</h1><br><h2 id="Info"><a href="#Info" class="headerlink" title="Info"></a>Info</h2><ul><li>Graduate student @ School of Physics, Peking Univ. </li><li>Supervised by <a href="https://faculty.pku.edu.cn/chenji/zh_CN/index.htm"><font color='dodgerblue'>Ji Chen (陈基)</font></a></li><li>Email: hxchen(at)pku(dot)edu(dot)cn</li></ul><h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul><li>2017.09 - 2021.06, Bachelor, Physics, Peking University</li><li>2021.09 - now, PhD student, Computational Condensed Matter Physics, Peking University</li></ul><h2 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h2><p>Strongly correlated (model) systems, with quantum Monte Carlo.</p><p>Currently applying <em>neural network quantum Monte Carlo</em> (NNQMC, NNVMC, ML-VMC) to studying quantum phases in strong-correlated systems, such as:</p><ul><li>Tomonaga-Luttinger liquid @ <em>ab inito</em> hydrogen chain</li><li>Fractional Chern Insulators &amp; Correlated insulators @ Moire systems.</li></ul><blockquote><p>I have also done some FCIQMC calculations on Hubbard model.</p></blockquote><h2 id="Publications-Preprints"><a href="#Publications-Preprints" class="headerlink" title="Publications &amp; Preprints"></a>Publications &amp; Preprints</h2><ul><li>Probing quantum critical phase from neural network wavefunction. <a href="https://arxiv.org/abs/2411.19938">Phys. Rev. B (accepted)</a><br><font size=2, color='#AAAAAA'><u>Haoxiang Chen (陈浩翔)</u>, Weiluo Ren (任维络), Xiang Li (李向), Ji Chen (陈基).</font></li><li>Deep Learning Sheds Light on Integer and Fractional Topological Insulators. <a href="https://arxiv.org/abs/2503.11756">arxiv</a><br><font size=2, color='#AAAAAA'>Xiang Li (李向), Yixiao Chen (陈一潇), Bohao Li (李泊浩), <u>Haoxiang Chen (陈浩翔)</u>, Fengcheng Wu (吴冯成), Ji Chen (陈基), Weiluo Ren (任维络). </font></li><li>Towards an accurate electronic structure of single photon emitters in hexagonal boron nitride. <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.L012079">Phys. Rev. Research 7, L012079 (2025)</a><br><font size=2, color='#AAAAAA'> Yilin Chen (陈亦林), <u>Haoxiang Chen (陈浩翔)</u>, Nikolay Bogdanov, Kuang Yu (余旷), Ali Alavi, Enge Wang (王恩哥), Ji Chen (陈基). </font></li><li>One-dimensional Dexter-type excitonic topological phase transition. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.110.085418">Phys. Rev. B 110, 085418 (2024)</a><br><font size=2, color='#AAAAAA'>Jianhua Zhu (朱健华), <u>Haoxiang Chen (陈浩翔)</u>, Ji Chen (陈基), Wei Wu (武威). </font></li><li>Spin singlet pairing of bismuth in titania. <a href="https://doi.org/10.1063/5.0176355">J. Chem. Phys. 159, 174709 (2023)</a><br><font size=2, color='#AAAAAA'>Jing Chang (常静), <u>Haoxiang Chen (陈浩翔)</u>, Peng Gao (高鹏),Ji Chen (陈基). </font></li><li>Regulating Anderson Localization with Structural Defect Disorder. <a href="https://iopscience.iop.org/article/10.1088/1674-1056/ad711c">Chinese Phys. B 33 107201</a><br><font size=2, color='#AAAAAA'>Mouyang Cheng (程谋阳), <u>Haoxiang Chen (陈浩翔)</u>, Ji Chen (陈基).</font></li></ul><h2 id="Talks"><a href="#Talks" class="headerlink" title="Talks"></a>Talks</h2><ul><li>2024.10.26 “Probing quantum critical phase with neural network quantum Monte Carlo” @ Quantum Monte Carlo Youth Forum, Chongqing, China</li></ul><hr><h1 id="Non-academic-part"><a href="#Non-academic-part" class="headerlink" title="Non-academic part"></a>Non-academic part</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><blockquote><p><strong>Misc.</strong></p><ul><li>“Haoxiang” sounds like “how-shuaang”. “X” sounds more like “ch” in “sprichst” if you know Deutsch.</li></ul></blockquote><ul><li>谜题巡猎 &#x2F; puzzle hunt: <ul><li>CCBC13&amp;14 (Eat Well Sleep Well); MiaoHunt 2023 (猫猫鉴赏团); CCBC9R (一届好题); P&amp;KU3上 (江南四大才子); CCBC15 (一队好人); FDUPH (First Deadline U<br>Procrastinate Happily)</li><li>城市定向系列: MV4, MVϑ, MV5</li></ul></li><li>(休闲) 骑行:<ul><li>“禅与自行车维修艺术”: 车的齿轮如何运转一般还是直观的、讲道理的，可以假设与检验；但是提出假设的过程不是完全理性的，而需要基于”经验”</li><li>喜欢蹦蹦跳跳，所以和公路车大抵没什么缘分</li></ul></li><li>学习语言:<ul><li>浅尝辄止，基本上是为了好玩</li><li>普通话(流利); 闽南语(能说), English (can speak); 日本語 (学んでいる); Deutsch (nur ein bisschen)</li></ul></li><li>写信:<ul><li>收到明信片时很快乐</li></ul></li></ul><h1 id="About-this-blog"><a href="#About-this-blog" class="headerlink" title="About this blog"></a>About this blog</h1><ul><li>About physics, shower thought and randomness.</li><li>Basically written in Chinese, 物理随笔中不想强调的部分会用英文写.</li></ul><hr><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> remembered <span class="hljs-keyword">and</span> procrastination.overcome:<br>  update()<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
