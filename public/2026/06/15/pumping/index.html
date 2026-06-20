@@ -19,21 +19,27 @@
   <meta name="author" content="Haoxiang Chen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome, welcome.">
+    <meta name="description" content="电荷泵浦如何对应拓扑性质？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="README">
-<meta property="og:url" content="http://f-x-chan.github.io/2024/11/02/README/index.html">
+<meta property="og:title" content="Topological Pumping">
+<meta property="og:url" content="http://f-x-chan.github.io/2026/06/15/pumping/index.html">
 <meta property="og:site_name" content="FOR THE MAXIMUM RANG OF ...">
-<meta property="og:description" content="Welcome, welcome.">
+<meta property="og:description" content="电荷泵浦如何对应拓扑性质？">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-11-02T14:07:03.000Z">
-<meta property="article:modified_time" content="2026-06-20T06:49:18.748Z">
+<meta property="og:image" content="http://f-x-chan.github.io/2026/06/15/pumping/2026-06-16-14-41-38-image.png">
+<meta property="og:image" content="http://f-x-chan.github.io/2026/06/15/pumping/2026-06-18-12-12-50-image.png">
+<meta property="og:image" content="http://f-x-chan.github.io/2026/06/15/pumping/2026-06-18-14-32-50-image.png">
+<meta property="og:image" content="http://f-x-chan.github.io/2026/06/15/pumping/2026-06-15-15-14-27-image.png">
+<meta property="article:published_time" content="2026-06-15T06:41:39.000Z">
+<meta property="article:modified_time" content="2026-06-20T13:16:34.598Z">
 <meta property="article:author" content="Haoxiang Chen">
+<meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://f-x-chan.github.io/2026/06/15/pumping/2026-06-16-14-41-38-image.png">
   
   
   
-  <title>README - FOR THE MAXIMUM RANG OF ...</title>
+  <title>Topological Pumping - FOR THE MAXIMUM RANG OF ...</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="README"></span>
+            <span id="subtitle" data-typed-text="Topological Pumping"></span>
           
         </div>
 
@@ -214,8 +220,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-11-02 22:07" pubdate>
-          November 2, 2024 pm
+        <time datetime="2026-06-15 14:41" pubdate>
+          June 15, 2026 pm
         </time>
       </span>
     
@@ -226,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          433 words
+          1.5k words
         
       </span>
     
@@ -237,7 +243,7 @@
         
         
         
-          4 mins
+          13 mins
         
       </span>
     
@@ -274,92 +280,113 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">README</h1>
+            <h1 id="seo-header">Topological Pumping</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome, welcome.</p>
+                <p>电荷泵浦如何对应拓扑性质？</p>
 <span id="more"></span>
-<h1 id="academic-part">Academic part</h1>
-<p><br></p>
-<h2 id="info">Info</h2>
-<ul>
-<li>Graduate student @ School of Physics, Peking Univ.</li>
-<li>Supervised by <a target="_blank" rel="noopener" href="https://faculty.pku.edu.cn/chenji/zh_CN/index.htm">Ji Chen (陈基)</a></li>
-<li>Email: hxchen(at)pku(dot)edu(dot)cn</li>
-</ul>
-<h2 id="education">Education</h2>
-<ul>
-<li>2017.09 - 2021.06, Bachelor, Physics, Peking University</li>
-<li>2021.09 - now, PhD student, Computational Condensed Matter Physics, Peking University</li>
-</ul>
-<h2 id="research-interests">Research Interests</h2>
-<p>Strongly correlated (model) systems, using quantum Monte Carlo.</p>
-<p>Currently applying <em>neural network quantum Monte Carlo</em> (NNQMC, NNVMC, ML-VMC) to studying quantum phases in strong-correlated systems, such as:</p>
-<ul>
-<li>Tomonaga-Luttinger liquid @ <em>ab inito</em> hydrogen chain</li>
-<li>Fractional Chern Insulators &amp; Correlated insulators @ Moire systems.</li>
-</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs textile">本文是对于 https://arxiv.org/abs/2604.08702 的一些想法<br>周期性体系中，多体波函数电极化随外加磁通的变化可以对应体系拓扑性质；<br>可以利用这个关系确认体系拓扑性质，尤其是可以适用于分数陈绝缘体。<br>下文取自然单位制<br></code></pre></td></tr></table></figure>
+<h2 id="intro-单体的-拓扑泵浦">INTRO: (单体的) 拓扑泵浦</h2>
+<h3 id="laughlins-argument-thouless-pumping">Laughlin’s argument &amp; Thouless pumping</h3>
+<p>我们从无相互作用系统开始，先考虑单粒子波函数的 pumping。</p>
+<p>Laughlin 提出思想实验：对于无相互作用电子气中的整数量子霍尔效应 (下图左)，外加单位磁通后，总的波函数 (在规范变换的意义下) 不变；</p>
+<p>如果这个过程中，单电子波函数从一个局域中心移动到了另一个局域中心 (下图右上)，那么就对应着</p>
+<figure>
+<style>.qhtyuewfydoe{}</style>
+<img src="/2026/06/15/pumping/2026-06-16-14-41-38-image.png" srcset="/img/loading.gif" lazyload class="qhtyuewfydoe">
+</figure>
+<p>在晶格体系中，也有类似 pumping；</p>
+<figure>
+<style>.kbrfeonvjxet{}</style>
+<img src="/2026/06/15/pumping/2026-06-18-12-12-50-image.png" srcset="/img/loading.gif" lazyload class="kbrfeonvjxet">
+<figcaption>
+Wannier 波函数的 pumping；<span class="math inline">\(y\)</span> 方向取 Bloch 态，<span class="math inline">\(x\)</span> 方向局域化为 Wannier 态。随着 <span class="math inline">\(k_y\)</span> 的从 <span class="math inline">\(-\pi\)</span> 变化到 <span class="math inline">\(\pi\)</span>，<span class="math inline">\(x\)</span> 方向的波函数局域中心要么移动若干个原胞 (拓扑态)，要么回到原来位置 (平庸态) [<i>PRR 5, 033212 (2023)</i>]
+</figcaption>
+</figure>
+<h2 id="多体的-整数泵浦">(多体的) 整数泵浦</h2>
+<h3 id="如何定义多体陈数">如何定义多体陈数?</h3>
+<p>在多体情况下，没有良好定义的能带，因此需要通过绝热演化定义。一个经常使用的定义是外加磁通下的演化。x,y 方向的磁通分别从 <span class="math inline">\(0\)</span> 变化到 <span class="math inline">\(2\pi\)</span>，形成了一个有效布里渊区。其中每个磁通的电子态的周期部分，都可以定义出 Berry connection, Berry curvature，比如</p>
+<p><span class="math display">\[
+\mathcal{A}_{\mu} = i \langle\Phi | \partial_{\mu} \Phi \rangle
+\]</span></p>
+<p>也就是需要计算不同磁通下的 <span class="math inline">\(|\Phi\rangle\)</span>。计算中会计算 twisted boundary condition 下的基态波函数 <span class="math inline">\(\psi_\theta\)</span>，满足</p>
+<p>也就是 <span class="math inline">\(H_\theta = e^{i\theta \sum_j x_j} H e^{-i \theta \sum_j x_j}\)</span> 在周期性边界条件下的基态波函数， <span class="math inline">\(\psi_{\theta}(x+L) = e^{i \theta} \psi_{\theta} (x)\)</span> ，其中 <span class="math inline">\(\psi_{\theta}(x) = e^{i \theta \frac{\sum_j x_j}{L_x} } \Phi_{\theta}(x)\)</span>.</p>
+<h3 id="如何表示多体电荷中心">如何表示多体电荷中心 ?</h3>
+<p>很显然，在周期性条件下，比较自然的单粒子坐标定义是 <span class="math inline">\(x \rightarrow \exp(i b x)\)</span>；<span class="math inline">\(b\)</span> 是<strong>超胞</strong>倒格矢。如果要 generalize 到多体情形，比较自然的选取方法是：</p>
+<ol type="1">
+<li><p><span class="math inline">\(\{x_1,x_2\cdots\}\rightarrow \exp(i b \sum_j x_j)\)</span></p></li>
+<li><p><span class="math inline">\({x_1,x_2\cdots}\rightarrow \sum_j \exp(ibx_j)\)</span></p></li>
+</ol>
+<p>考虑到: 1) 我们需要的是“电荷中心”的位置； 2) 如果电子完全局域，后面的式子是 0；所以这里，多体电子位置的合理取法是 1，这也就是 Resta’s polarization operator。</p>
 <blockquote>
-<p>I also have experience in FCIQMC calculations.</p>
+<p>值得注意的是，尽管 Resta 的算符中 <span class="math inline">\(b\)</span> 取超胞倒格子的基矢，但选其他的倒格子矢量也是合法的；我们在下面会用到这一点来简化计算</p>
 </blockquote>
-<h2 id="publications-preprints">Publications &amp; Preprints</h2>
-<ul>
-<li><p>Topological invariant of periodic many body wavefunction from charge pumping simulation, <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2604.08702">arXiv:2604.08702 (2026)</a></p>
-<p><u>Haoxiang Chen (陈浩翔)</u>, Yubing Qian (钱昱冰), Weiluo Ren (任维络), Xiang Li (李向), Ji Chen (陈基).</p></li>
-<li><p>Deep-learning electronic structure calculations, <a href="%5BDeep-learning%20electronic%20structure%20calculations%20%7C%20Nature%20Computational%20Science%5D(https://www.nature.com/articles/s43588-025-00932-4)">Nat. Comput. Sci. 5, 1133 (2025)</a>.</p>
-<p>Zechen Tang (唐泽宸)<em>, <u>Haoxiang Chen (陈浩翔)</u></em> et al.</p></li>
-<li><p>Probing quantum critical phase from neural network wavefunction. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2411.19938">Phys. Rev. B (accepted)</a> <u>Haoxiang Chen (陈浩翔)</u>, Weiluo Ren (任维络), Xiang Li (李向), Ji Chen (陈基).</p></li>
-<li><p>Deep Learning Sheds Light on Integer and Fractional Topological Insulators. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2503.11756">arxiv</a> Xiang Li (李向), Yixiao Chen (陈一潇), Bohao Li (李泊浩), <u>Haoxiang Chen (陈浩翔)</u>, Fengcheng Wu (吴冯成), Ji Chen (陈基), Weiluo Ren (任维络).</p></li>
-<li><p>Towards an accurate electronic structure of single photon emitters in hexagonal boron nitride. <a target="_blank" rel="noopener" href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.L012079">Phys. Rev. Research 7, L012079 (2025)</a> Yilin Chen (陈亦林), <u>Haoxiang Chen (陈浩翔)</u>, Nikolay Bogdanov, Kuang Yu (余旷), Ali Alavi, Enge Wang (王恩哥), Ji Chen (陈基).</p></li>
-<li><p>One-dimensional Dexter-type excitonic topological phase transition. <a target="_blank" rel="noopener" href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.110.085418">Phys. Rev. B 110, 085418 (2024)</a> Jianhua Zhu (朱健华), <u>Haoxiang Chen (陈浩翔)</u>, Ji Chen (陈基), Wei Wu (武威).</p></li>
-<li><p>Spin singlet pairing of bismuth in titania. <a target="_blank" rel="noopener" href="https://doi.org/10.1063/5.0176355">J. Chem. Phys. 159, 174709 (2023)</a> Jing Chang (常静)<em>, <u>Haoxiang Chen (陈浩翔)</u></em>, Peng Gao (高鹏),Ji Chen (陈基).</p></li>
-<li><p>Regulating Anderson Localization with Structural Defect Disorder. <a target="_blank" rel="noopener" href="https://iopscience.iop.org/article/10.1088/1674-1056/ad711c">Chinese Phys. B 33 107201</a> Mouyang Cheng (程谋阳), <u>Haoxiang Chen (陈浩翔)</u>, Ji Chen (陈基).</p></li>
-</ul>
-<h2 id="talks">Talks</h2>
-<ul>
-<li>2024.10.26 “Probing quantum critical phase with neural network quantum Monte Carlo” @ Quantum Monte Carlo Youth Forum, Chongqing, China</li>
-<li>2025.10 “Neural Network Quantum Monte Carlo on Strongly Correlated Topological Flat Bands” @ NEQT, Durham, USA</li>
-</ul>
-<hr />
-<h1 id="non-academic-part">Non-academic part</h1>
-<h2 id="section"></h2>
+<p>电极化的改变量对应电荷的输运过程。在开边界下，很自然地可以对应</p>
+<p><span class="math display">\[
+P=\sum_j r_j \tag{1}
+\]</span></p>
+<p>在周期性的条件下，需要将上式周期化。Resta 将电极化算符定义为</p>
+<p><span class="math display">\[
+\hat{Z}_{\mu}=\exp(i b_{\mu} \sum_j \hat{r}_i) \tag{2}
+\]</span></p>
+<p>其中 <span class="math inline">\(b_\mu\)</span> 对应于 <span class="math inline">\(\mu\)</span> 方向上的原胞倒格矢。直观上，Resta’s polarization operator 的幅角就对应于电极化的值。</p>
 <blockquote>
-<p><strong>Misc.</strong></p>
-<ul>
-<li>“Haoxiang” sounds like “how-shuaang”. “X” sounds more like “ch” in “sprichst” if you know Deutsch.</li>
-</ul>
+<p>BTW 这个电极化算符的模长对应电子的局域化程度，可以用于区分金属和绝缘体。</p>
 </blockquote>
-<ul>
-<li>谜题巡猎 / puzzle hunt:
-<ul>
-<li>CCBC13&amp;14 (Eat Well Sleep Well); MiaoHunt 2023 (猫猫鉴赏团); CCBC9R (一届好题); P&amp;KU3上 (江南四大才子); CCBC15 (一队好人); FDUPH (First Deadline U Procrastinate Happily)</li>
-<li>城市定向系列: MV4, MVϑ, MV5</li>
-</ul></li>
-<li>(休闲) 骑行:
-<ul>
-<li>“禅与自行车维修艺术”: 车的齿轮如何运转一般还是直观的、讲道理的，可以假设与检验；但是提出假设的过程不是完全理性的，而需要基于“经验”</li>
-<li>喜欢蹦蹦跳跳，所以和公路车大抵没什么缘分</li>
-</ul></li>
-<li>学习语言:
-<ul>
-<li>浅尝辄止，基本上是为了好玩</li>
-<li>普通话(流利); 闽南语(能说), English (can speak); 日本語 (学んでいる); Deutsch (nur ein bisschen)</li>
-</ul></li>
-<li>写信:
-<ul>
-<li>收到明信片时很快乐</li>
-</ul></li>
-</ul>
-<hr />
-<h1 id="about-this-blog">About this blog</h1>
-<ul>
-<li>About physics, shower thought and randomness.</li>
-<li>Basically written in Chinese, 物理随笔中不想强调的部分会用英文写.</li>
-</ul>
-<hr />
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> remembered <span class="hljs-keyword">and</span> procrastination.overcome:<br>  update()<br></code></pre></td></tr></table></figure>
+<p>现代电极化理论中，</p>
+<p><span class="math display">\[
+\frac{\text{d}}{\text{d}t} \ln \langle Z \rangle= J
+\]</span></p>
+<p>因此我们可以追踪多体电极化的相位，来看外加磁通过程中的绝热输运。</p>
+<h3 id="极化泵浦陈数">极化、泵浦、陈数</h3>
+<p>我们现在知道:</p>
+<ol type="1">
+<li><p>绝热磁通插入下，电荷的输运 → 拓扑性质</p></li>
+<li><p>多体电极化改变 → 电荷的输运</p></li>
+<li><p>拓扑性质 ← 拓扑不变量</p></li>
+</ol>
+<p>合起来，<strong>绝热磁通插入下的多体电极化的变化对应拓扑不变量</strong></p>
+<figure>
+<style>.ytmpvdwmsikd{}</style>
+<img src="/2026/06/15/pumping/2026-06-18-14-32-50-image.png" srcset="/img/loading.gif" lazyload class="ytmpvdwmsikd">
+<figcaption>
+黄点是极化的相位，蓝箭头是单位磁通插入，红箭头是极化相位变化的轨迹
+</figcaption>
+</figure>
+<h2 id="多体的-分数泵浦">(多体的) 分数泵浦</h2>
+<h3 id="spectral-flow">Spectral flow</h3>
+<p>分数陈绝缘体始终存在基态简并，这种简并由质心平移对称性保证。</p>
+<p>因此，在外加多个单位磁通后，分数陈绝缘体才能回到初始状态。</p>
+<blockquote>
+<p>作为对比，整数情形下，外加单位磁通后，系统回到原来状态。</p>
+</blockquote>
+<figure>
+<style>.tekerojtltwf{}</style>
+<img src="/2026/06/15/pumping/2026-06-15-15-14-27-image.png" srcset="/img/loading.gif" lazyload class="tekerojtltwf">
+<figcaption>
+2/3 filling FCI 态的 spectral flow；最下面的彩线是基态，外加磁通时这些基态相互交换位置，经过 <span class="math inline">\(6\pi\)</span> 的周期后回到初始状态。 [<i>arXiv:2503.11756</i>]
+</figcaption>
+</figure>
+<p>如果限定在第一布里渊区中，总是需要处理简并基态张成的子空间。</p>
+<p>而如果扩大有效布里渊区，就可以只追踪其中一个态的变化情况，来。</p>
+<h3 id="基于-polarization-的-pumping">基于 polarization 的 pumping</h3>
+<p>对于没有简并的情形，polarization <span class="math inline">\(\propto \ln{\langle \psi | \hat{Z} | \psi \rangle}\)</span>； 对于简并基态的空间，polarization 应当对于子空间中的旋转不变，因此需要是 <span class="math inline">\(\propto \ln \det{\langle \psi_i | \hat{Z} | \psi_j\rangle}\)</span>.</p>
+<blockquote>
+<p>如果考虑到非正交的话 ，<span class="math inline">\(\propto \ln \det({\mathbf{S}^{-1} \mathbf{Z}})\)</span></p>
+</blockquote>
+<p>这个量 <em>应当</em> 在单位磁通插入后，回到原先的位置；因此每个态 <em>平均</em> 的陈数是分数。</p>
+<p>但是这个算符涉及到波函数之间的交叠，理论上可以算，但比较麻烦。</p>
+<p>我们一般是通过 momentum sector 来区分不同的近简并基态，这会使得极化算符中很多矩阵元可以是 0；如果我们恰当选取 <span class="math inline">\(Z_{b}\)</span> 中的 <span class="math inline">\(b\)</span>，很多矩阵元会消失；由于 <span class="math inline">\(Z_b\)</span> 是动量空间的平移算符，仅仅 <span class="math inline">\(K_i = (K_j + N_e b)\)</span> 时 (在布里渊区平移的意义下)，矩阵元才不为 0.</p>
+<p>我们选择</p>
+<p><span class="math display">\[
+N_e \mathbf{b} = m \mathbf{G}_x + n \mathbf{G}_y \tag{3}
+\]</span></p>
+<p>那么只有同个 sector 中的矩阵元不为 0.</p>
+<h2 id="misc.">MISC.</h2>
+<p><strong>为什么是直线？</strong> 直观上，多体的 Berry curvature 很平 (随着粒子数指数变平, ref. [])；</p>
+<p><strong>什么时候这个方法会裂开？</strong> 这个方法的想法基于绝热演化，当随着 flux 变化，波函数从一个</p>
 
                 
               </div>
@@ -369,6 +396,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/physics/" class="print-no-link">#physics</a>
+      
+    </div>
+  
 </div>
 
 
@@ -377,8 +411,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>README</div>
-      <div>http://f-x-chan.github.io/2024/11/02/README/</div>
+      <div>Topological Pumping</div>
+      <div>http://f-x-chan.github.io/2026/06/15/pumping/</div>
     </div>
     <div class="license-meta">
       
@@ -390,7 +424,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>November 2, 2024</div>
+          <div>June 15, 2026</div>
         </div>
       
       
@@ -428,15 +462,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/11/12/%E8%8A%9D%E8%AF%BA%E7%9A%84%E5%85%83%E7%B4%A0%E7%81%B5/" title="芝诺的元素灵">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">芝诺的元素灵</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/02/04/FCIQMC/" title="FCIQMC">
+                        <span class="hidden-mobile">FCIQMC</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
