@@ -106,3 +106,24 @@ deploy:
   repo: git@github.com:F-X-CHAN/F-X-CHAN.github.io.git
   branch: master
 
+
+#mathjax:
+#  tags: none
+#  single_dollars: true
+#  cjk_width: 0.9
+#  normal_width: 0.6
+#  append_css: true
+#  every_page: false
+#  packages:
+#  extension_options: {}
+
+
+# Pandoc 配置
+pandoc:
+  args:
+    - '-f'
+    - 'markdown+lists_without_preceding_blankline'
+    - '-t'
+    - 'html5'
+    - '--mathjax'
+  include: ["source/_posts/FCIQMC.md"]
